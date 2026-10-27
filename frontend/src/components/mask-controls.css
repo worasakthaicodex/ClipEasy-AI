@@ -1,0 +1,37 @@
+.mask-fx-controls { padding: 8px 14px 14px; font-size: 11px; color: var(--text-secondary); }
+.mask-fx-controls button, .mask-fx-controls input { font: inherit; }
+.mask-fx-actions { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.mask-fx-button { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-height: 27px; padding: 4px 8px; color: var(--text-primary); background: var(--bg-panel-alt, #22262d); border: 1px solid var(--border-subtle); border-radius: 4px; cursor: pointer; }
+.mask-fx-button:hover:not(:disabled), .mask-fx-button.active { border-color: var(--accent-teal); color: var(--accent-teal); }
+.mask-fx-button.primary { color: var(--accent-teal); border-color: var(--accent-teal-dim); }
+.mask-fx-button.icon { width: 28px; padding: 4px; }
+.mask-fx-button.danger:hover:not(:disabled) { color: #ff8b82; border-color: #be5b54; }
+.mask-fx-controls button:disabled, .mask-fx-controls input:disabled { opacity: .45; cursor: default; }
+.mask-fx-subhead { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 7px; margin-top: 13px; padding: 9px 0 7px; border-top: 1px solid var(--border-subtle); color: var(--text-primary); font-weight: 600; }
+.mask-fx-subhead small { color: var(--text-dim); font-size: 9px; font-weight: 400; }
+.mask-fx-toggle { display: inline-flex; gap: 5px; align-items: center; color: var(--text-secondary); font-size: 10px; font-weight: 400; }
+.mask-fx-toggle input { margin: 0; accent-color: var(--accent-teal); }
+.mask-fx-field { display: grid; grid-template-columns: minmax(0, 1fr) 88px; align-items: center; gap: 4px 8px; min-height: 30px; padding: 2px 0; }
+.mask-fx-number { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+.mask-fx-number input { width: 69px; min-width: 0; height: 23px; padding: 2px 4px; text-align: right; color: var(--accent-teal); background: var(--bg-deep, #14161b); border: 1px solid var(--border-subtle); border-radius: 3px; }
+.mask-fx-number input:focus { outline: 1px solid var(--accent-teal); }
+.mask-fx-number small { flex: 0 0 10px; color: var(--text-dim); font-size: 9px; }
+.mask-fx-field.has-slider { padding-bottom: 8px; }
+.mask-fx-field input[type="range"] { grid-column: 1 / -1; width: 100%; min-width: 0; margin: 3px 0; accent-color: var(--accent-teal); }
+.mask-fx-text-button { display: inline-flex; align-items: center; gap: 5px; padding: 3px 0; border: 0; background: transparent; color: var(--accent-teal); font-size: 10px !important; cursor: pointer; }
+.mask-fx-note { margin: 6px 0; color: var(--text-dim); font-size: 10px; line-height: 1.55; }
+.mask-fx-note.active-note { color: var(--accent-teal); }
+.mask-fx-empty > p:first-child { margin-top: 1px; line-height: 1.6; }
+.mask-fx-timing-strip { display: flex; height: 5px; margin: 2px 0 6px; overflow: hidden; border-radius: 3px; background: var(--border-subtle); }
+.mask-fx-timing-strip span { flex-basis: 0; }
+.mask-fx-timing-strip .enter { background: #3b918e; }
+.mask-fx-timing-strip .hold { background: var(--accent-teal); }
+.mask-fx-timing-strip .exit { background: #3b918e; }
+.mask-fx-track { width: 100%; margin-top: 3px; }
+.mask-fx-job { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 7px; margin-top: 10px; }
+.mask-fx-job > span { grid-column: 1; color: var(--accent-teal); }
+.mask-fx-job progress { grid-column: 1; width: 100%; height: 5px; accent-color: var(--accent-teal); }
+.mask-fx-job button { grid-column: 2; grid-row: 1 / 3; }
+.mask-fx-error { color: #ff8b82; font-size: 10px; line-height: 1.5; overflow-wrap: anywhere; }
+.mask-fx-success { color: var(--accent-teal); font-size: 10px; line-height: 1.5; }
+.mask-fx-warning { color: #d6ab62; font-size: 10px; line-height: 1.5; }

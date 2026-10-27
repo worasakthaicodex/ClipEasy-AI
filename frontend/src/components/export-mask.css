@@ -1,0 +1,12 @@
+.export-preview-pane { grid-template-rows: 38px minmax(0, 1fr) 42px; }
+.export-preview-stage.sequence-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+.export-preview-stage.sequence-preview video { box-shadow: none; }
+.export-preview-stage.sequence-preview .monitor-viewport { width: 100%; min-width: 0; overflow: hidden; }
+.export-error { white-space: normal; }

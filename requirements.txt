@@ -1,0 +1,15 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pillow==10.4.0
+numpy>=1.26.4
+scipy>=1.14
+opencv-python-headless>=4.10  # ลดสั่น (stabilize) — vidstab ของ ffmpeg build ปัจจุบันแครชสุ่มบน Windows เลยทำเองด้วย OpenCV
+noisereduce==3.0.3
+
+# เพิ่มทีละตัวตอนทำฟีเจอร์ AI จริง (อย่าใส่ทั้งหมดตั้งแต่แรก ไฟล์หนักและบางตัวต้องเลือกรุ่นตรง CUDA):
+# torch, torchvision      -> https://pytorch.org เลือกคำสั่งติดตั้งตาม GPU ของเครื่องจริง
+# insightface             -> face swap
+# rembg                   -> background removal (เริ่มง่ายสุดสำหรับ background replace)
+# openai-whisper          -> auto subtitle
+# coqui-tts               -> พากย์เสียง AI

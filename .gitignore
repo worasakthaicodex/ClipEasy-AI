@@ -1,0 +1,47 @@
+# Local environments and downloaded engines/models
+/venv/
+/.venv/
+/_engines/
+/_work/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+
+# Build output and local test runs
+/frontend/dist/
+/frontend/tests/output/
+.pytest_cache/
+.coverage
+coverage/
+*.log
+*.tmp
+*.bak
+
+# Local settings, credentials, editor and assistant history
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/.agents/
+/.claude/
+/.codex/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# User projects/media are not part of the source distribution
+*.clipeasy.json
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.wav
+*.mp3
+*.onnx
+*.pth
+*.pt
+*.safetensors
+/core/New Text Document.txt
